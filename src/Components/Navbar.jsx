@@ -10,6 +10,7 @@ import {
   IconButton,
   Avatar,
   Link,
+  Heading,
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -22,7 +23,6 @@ const navItem = [
   { path: "about", name: "About Me" },
   { path: "skills", name: "Skills" },
   { path: "projects", name: "Projects" },
-
   { path: "contact", name: "Contact" },
 ];
 
@@ -53,9 +53,11 @@ export default function App() {
             <Avatar
               size="sm"
               name="Priyanshu Pawar"
-              src="https://img.freepik.com/free-vector/gradient-p-logo-template_23-2149372725.jpg?w=2000"
-              _hover={{ padding: "1px" }}
+              src="https://www.citypng.com/public/uploads/small/31634946729ohd4odcijurvd40v45hl8lft4w1qmw8bx6fpldgscjmqvhptmmk00uh8j1ol5e20u2vd13ewb2ojyzg60xau3z3mkymxo7ydaql1.png"
             />
+            <Heading as="h3" size="md">
+              Priyanshu Pawar
+            </Heading>
           </chakra.a>
           <HStack spacing={3} display={{ base: "none", md: "flex" }}>
             {navItem.map((item, i) => {
